@@ -136,7 +136,7 @@ public class B_ArrayCopy {
 
 		System.out.println(Arrays.toString(origin));
 		System.out.println(Arrays.toString(copy));
-		
+
 //		Araay.toString(배열)
 //		-> 앞과 뒤에 [] 각 값마다, 를 넣어서 하나의 문자열로 연이어서 출력해주는 메서드
 
