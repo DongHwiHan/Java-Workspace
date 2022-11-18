@@ -32,8 +32,20 @@ public class Run {
 		hong.setName("홍길동");
 		hong.setAge(20);
 		hong.setHeight(185.5);
+		
+		System.out.println(hong.getName());
+		System.out.println(hong.getAge());
+		System.out.println(hong.getHeight());
+		
 
 		System.out.println(hong.information());
+		
+		Student han = new Student();
+		han.setName("동히");
+		han.setAge(26);
+		han.setHeight(180.5);
+		
+		System.out.println(han.information());
 	}
 
 }

@@ -292,52 +292,51 @@ public class A_Array {
 			System.out.println(arr[i]);
 		}
 	}
-	
+
 	public void method11() {
 //		1. 사용자에게 배열의 길이 입력받은후, 해당 크기만큼 정수배열 생성
 		Scanner sc = new Scanner(System.in);
 		System.out.println("배열의 길이 입력 : ");
 		int num = sc.nextInt();
 		int[] arr = new int[num];
-		
+
 //		2. 반복문 활용해서 0번 인덱스부터 마지막 인덱스까지 순차적으로 접근하면서 값 대입
 //			-> 랜덤값(1~100)
-		for(int i = 0; i <arr.length; i++ ) {
-			arr[i] = (int)(Math.random() *100 +1);
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = (int) (Math.random() * 100 + 1);
 		}
-		
+
 //		3. 반복문 활용해서 0번 인덱스부터~ 마지막 인덱스까지 배열에 담긴값 출력과 동시에,
 //		   해당 인덱스에 담김 값이 짝수인 경우 그 값들의 총합 구하기.
 		int sum = 0;
-		for(int i = 0; i < arr.length; i++) {
-			System.out.printf("arr[%d] : %d \n",i,arr[i]);
-			if(arr[i] %2 ==0) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.printf("arr[%d] : %d \n", i, arr[i]);
+			if (arr[i] % 2 == 0) {
 				sum += arr[i];
 			}
 		}
-		System.out.println("총합 : "+sum);
+		System.out.println("총합 : " + sum);
 	}
-	
+
 	public void method12() {
 		Scanner sc = new Scanner(System.in);
 
 		double[] heights = new double[3];
-		
-		
+
 //		1. 반복문을 활용해서 heights배열의 0번 인덱스부터 마지막 인덱스까지 반복을
 //		   진행하면서 사용자로부터 키에대한 정보(cm)를 입력받아 각 인데스에 저장
-		for(int i = 0; i < heights.length; i++) {
+		for (int i = 0; i < heights.length; i++) {
 			heights[i] = sc.nextDouble();
 		}
-		
+
 //		2. 3명의 키에대한 정보를 출력 시키면서 동시에 모든 키에대한 총합을 저장
 		int sum = 0;
-		for(int i = 0; i < heights.length; i++) {
-			System.out.printf("키는 [%d]cm 입니다. \n",(int)heights[i]);
+		for (int i = 0; i < heights.length; i++) {
+			System.out.printf("키는 [%d]cm 입니다. \n", (int) heights[i]);
 			sum += heights[i];
 		}
 //		3. 3명의 키의 총합을 출력하고, 3명키의 평균도 출력 (단, 소숫점 첫째짜리까지 출력)
-		System.out.println("총합 : " + (float)sum);
-		System.out.printf("평균 : " + (float)sum / 3);
+		System.out.println("총합 : " + (float) sum);
+		System.out.printf("평균 : " + (float) sum / 3);
 	}
 }
