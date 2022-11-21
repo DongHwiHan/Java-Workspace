@@ -8,7 +8,7 @@ public class Run {
 
 		Student s = new Student();
 
-		System.out.println(s.InFormation());
+		s.InFormation();
 	}
 
 }

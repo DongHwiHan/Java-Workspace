@@ -60,7 +60,7 @@ public class Student {
 		this.gender = gender;
 	}
 
-	public String InFormation() {
-		return grade + " " + classroom + " " + name + " " + height + " " + gender;
+	public void InFormation() {
+		System.out.println(grade + " " + classroom + " " + name + " " + height + " " + gender);
 	}
 }
