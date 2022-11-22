@@ -24,7 +24,7 @@ public class Run {
 		cc.forceCasting();
 		
 		D_printf dp = new D_printf();
-		dp.printFtest();
+//		dp.printFtest();
 		
 		
 	}

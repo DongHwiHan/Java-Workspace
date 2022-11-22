@@ -224,7 +224,7 @@ public class A_For {
 //		2 X 8 = 16
 //		2 X 9 = 18
 		System.out.println("구구단출력(2단)");
-		for(int i = 1; i < 10; i++) {
+		for(int i = 1; i <= 9; i++) {
 			System.out.println(2 +" X " + i + " = " + (2*i));
 		}
 	}

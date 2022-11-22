@@ -71,9 +71,9 @@ public class ShapeMenu {
 
 			if (menuNum == 1) {
 				System.out.print("높이 : ");
-				int height = sc.nextInt();
+				double height = sc.nextInt();
 				System.out.print("너비 : ");
-				int width = sc.nextInt();
+				double width = sc.nextInt();
 				System.out.println("삼각형 둘레 : " + tc.calcArea(height, width));
 				triangleMenu();
 
@@ -86,7 +86,7 @@ public class ShapeMenu {
 				triangleMenu();
 
 			} else if (menuNum == 3) {
-				printInformation(type);
+				printInformation(3);
 				triangleMenu();
 			} else {
 				inputMenu();
@@ -97,16 +97,16 @@ public class ShapeMenu {
 
 			if (menuNum == 1) {
 				System.out.print("높이 : ");
-				int height = sc.nextInt();
+				double height = sc.nextInt();
 				System.out.print("너비 : ");
-				int width = sc.nextInt();
+				double width = sc.nextInt();
 				System.out.println("사각형 둘레 : " + scr.calcPerimeter(height, width));
 				squareMenu();
 			} else if (menuNum == 2) {
 				System.out.print("높이 : ");
-				int height = sc.nextInt();
+				double height = sc.nextInt();
 				System.out.print("너비 : ");
-				int width = sc.nextInt();
+				double width = sc.nextInt();
 				System.out.println("사각형 면적 : " + scr.calcArea(height, width));
 				squareMenu();
 
@@ -119,7 +119,7 @@ public class ShapeMenu {
 				squareMenu();
 
 			} else if (menuNum == 4) {
-				printInformation(type);
+				printInformation(3);
 				squareMenu();
 
 			} else {
