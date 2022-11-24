@@ -25,8 +25,6 @@ public class StudentMenu {
 
 		System.out.println("========== 성적 결과 출력 ==========");
 
-		Math.random();
-
 		for (Student std : arr) {
 			String result = "통과";
 			if (std.getScore() < StudentController.CUT_LINE) {

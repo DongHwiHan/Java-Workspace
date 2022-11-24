@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.kh.hw.shape.controller.SquareController;
 import com.kh.hw.shape.controller.TriangleController;
 
-public class ShapeMenu {
+public class ShapeMenu { // 기본생성자
 
 	private Scanner sc = new Scanner(System.in);
 
