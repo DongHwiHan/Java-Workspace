@@ -1,14 +1,15 @@
 package com.kh.practice.point.model.vo;
 
 public class Point {
-
 	private int x;
 	private int y;
 
 	public Point() {
+		super();
 	}
 
 	public Point(int x, int y) {
+		super();
 		this.x = x;
 		this.y = y;
 	}
@@ -29,8 +30,9 @@ public class Point {
 		this.y = y;
 	}
 
+	@Override
 	public String toString() {
-		return "";
+		return "Point [x=" + x + ", y=" + y + "]";
 	}
 
 }

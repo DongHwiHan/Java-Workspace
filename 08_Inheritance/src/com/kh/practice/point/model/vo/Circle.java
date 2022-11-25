@@ -1,15 +1,15 @@
 package com.kh.practice.point.model.vo;
 
 public class Circle extends Point {
-
 	private int radius;
 
 	public Circle() {
+		super();
 	}
 
-	public Circle(int x, int y, int radius) {
+	public Circle(int x, int y, int raduis) {
 		super(x, y);
-		this.radius = radius;
+		this.radius = raduis;
 	}
 
 	public int getRadius() {
@@ -20,8 +20,9 @@ public class Circle extends Point {
 		this.radius = radius;
 	}
 
+	@Override
 	public String toString() {
-		return "";
+		return super.toString() + "Circle [radius=" + radius + "]";
 	}
 
 }

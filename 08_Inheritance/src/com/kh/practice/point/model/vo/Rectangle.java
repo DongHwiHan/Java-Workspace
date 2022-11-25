@@ -1,11 +1,11 @@
 package com.kh.practice.point.model.vo;
 
 public class Rectangle extends Point {
-
 	private int width;
 	private int height;
 
 	public Rectangle() {
+		super();
 	}
 
 	public Rectangle(int x, int y, int width, int height) {
@@ -30,8 +30,9 @@ public class Rectangle extends Point {
 		this.height = height;
 	}
 
+	@Override
 	public String toString() {
-		return "";
+		return super.toString() + "Rectangle [width=" + width + ", height=" + height + "]";
 	}
 
 }
