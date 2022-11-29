@@ -1,11 +1,11 @@
 package com.kh.practice.chap02_abstractNInterface.model.vo;
 
+public interface Phone {
 
-
-public interface Phone extends CellPhone {
-	public char[] NUMBERPAD = {'1','2','3','4','5','6','7','8','9','*','0','#'};
-		
-	public String makeCall(); // 전화 걸기
+	char [] NUMBERPAD = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '*', '0', '#'};
 	
-	public String takeCall(); // 전화 받기
-	}
+	String makeCall();
+		
+	String takeCall();
+	
+}

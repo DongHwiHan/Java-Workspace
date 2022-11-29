@@ -1,6 +1,5 @@
 package com.kh.practice.chap02_abstractNInterface.model.vo;
 
-public interface Camera extends CellPhone {
-
-	public String picture(); // 촬영 방식
+public interface Camera {
+	String picture();
 }

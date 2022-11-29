@@ -10,7 +10,7 @@ public class Run {
 		// 추상클래스로 절대 생성불가 => 미완성된 클래스이기 때문.
 		
 		Sports s;// 단 , 객체 생성만 안될뿐 레퍼런스 변수로는 사용 가능.
-		s= new Football();// 즉, 다형성을 적용해서 자식객체를 받아주는 용도로느 사용 가능.
+		s = new Football();// 즉, 다형성을 적용해서 자식객체를 받아주는 용도로느 사용 가능.
 		
 		Sports[] arr = new Sports[2];
 		arr[0] = new Football();
