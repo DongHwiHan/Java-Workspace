@@ -5,6 +5,7 @@ public class Child1 extends Parent {
 	private int z;
 
 	public Child1() {
+		super();
 	}
 
 	public Child1(int x, int y, int z) {
@@ -22,7 +23,7 @@ public class Child1 extends Parent {
 
 	@Override
 	public String toString() {
-		return "Child1 [z=" + z + ", toString()=" + super.toString() + "]";
+		return "Chil1 [z=" + z + ", toString()=" + super.toString() + "]";
 	}
 
 	public void printChild1() {

@@ -2,9 +2,11 @@ package com.kh.practice.chap01_poly.model.vo;
 
 public class CookBook extends Book {
 
-	public boolean coupon;
+	private boolean coupon;
 
 	public CookBook() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public CookBook(String title, String author, String publisher, boolean coupon) {
@@ -22,7 +24,7 @@ public class CookBook extends Book {
 
 	@Override
 	public String toString() {
-		return "CookBook [coupon=" + (coupon ? true : false) + ", toString()=" + super.toString() + "]";
+		return "CookBook [coupon=" + coupon + ", toString()=" + super.toString() + "]";
 	}
 
 }

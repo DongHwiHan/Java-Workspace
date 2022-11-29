@@ -5,6 +5,7 @@ public class Child2 extends Parent {
 	private int n;
 
 	public Child2() {
+		super();
 	}
 
 	public Child2(int x, int y, int n) {
@@ -28,7 +29,7 @@ public class Child2 extends Parent {
 	public void printChild2() {
 		System.out.println("두번째 자식에서 호출됨");
 	}
-	
+
 	@Override
 	public void print() {
 		System.out.println("두번째 자식");

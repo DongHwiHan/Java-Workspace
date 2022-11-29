@@ -1,4 +1,4 @@
-package com.kh.chap01_poly.part02_electronic.moldel.vo;
+package com.kh.chap01_poly.part02_electronic.model.vo;
 
 public class Desktop extends Electronic {
 
@@ -6,6 +6,7 @@ public class Desktop extends Electronic {
 	private String graphic;
 
 	public Desktop() {
+		super();
 	}
 
 	public Desktop(String brand, String name, int price, String graphic) {
@@ -25,5 +26,4 @@ public class Desktop extends Electronic {
 	public String toString() {
 		return "Desktop [graphic=" + graphic + ", toString()=" + super.toString() + "]";
 	}
-
 }

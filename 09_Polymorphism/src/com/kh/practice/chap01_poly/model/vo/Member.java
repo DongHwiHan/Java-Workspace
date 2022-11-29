@@ -7,9 +7,11 @@ public class Member {
 	private int couponCount = 0;
 
 	public Member() {
+		super();
 	}
 
 	public Member(String name, int age, char gender, int couponCount) {
+		super();
 		this.name = name;
 		this.age = age;
 		this.gender = gender;

@@ -1,10 +1,11 @@
-package com.kh.chap01_poly.part02_electronic.moldel.vo;
+package com.kh.chap01_poly.part02_electronic.model.vo;
 
 public class NoteBook extends Electronic {
 
 	private int usbPort;
 
 	public NoteBook() {
+		super();
 	}
 
 	public NoteBook(String brand, String name, int price, int usbPort) {
@@ -24,5 +25,4 @@ public class NoteBook extends Electronic {
 	public String toString() {
 		return "NoteBook [usbPort=" + usbPort + ", toString()=" + super.toString() + "]";
 	}
-
 }

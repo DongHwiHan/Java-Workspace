@@ -5,6 +5,7 @@ public class AniBook extends Book {
 	private int accessAge;
 
 	public AniBook() {
+		super();
 	}
 
 	public AniBook(String title, String author, String publisher, int accessAge) {
