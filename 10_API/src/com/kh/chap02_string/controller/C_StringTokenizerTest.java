@@ -21,17 +21,17 @@ public class C_StringTokenizerTest {
 		// for( 값을 받아줄 변수 : 순차적으로 접근할 배열){
 		//}
 		for( String s  :  arr) {
-			System.out.print(s);
+			System.out.print(s); // Java Oracle JDBC HTML CSS JavaScript Server
 		}
 		
-		System.out.println("===================================================");
+		System.out.println("\n===================================================");
 	
 		//방법 2. 분리된 각각의 문자열들을 토큰으로 취급하고 싶을 때
 		//       java.util.StringTokenizer 클래스를 이용하는 방법
 		//       StringTokenizer stn = new StringTokenizer(분리시키고자 하는 문자열, 구분자);
 		StringTokenizer stn = new StringTokenizer(str, " ");
 		
-		System.out.println("분리된 문자열의 갯수 : "+ stn.countTokens());
+		System.out.println("분리된 문자열의 갯수 : "+ stn.countTokens()); // 분리된 문자열의 갯수 : 7
 		
 //		System.out.println(stn.nextToken()); 
 //		System.out.println(stn.nextToken()); 
@@ -43,7 +43,13 @@ public class C_StringTokenizerTest {
 //		System.out.println(stn.nextToken());
 		
 		while(stn.hasMoreTokens()) {// 다음토큰인 있으면 true, 없으면 false
-			System.out.println(stn.nextToken());
+			System.out.println(stn.nextToken()); // Java
+//													Oracle
+//													JDBC
+//													HTML
+//													CSS
+//													JavaScript
+//													Server
 		}
 	}
 }

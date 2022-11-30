@@ -39,7 +39,7 @@ public class TokenMenu {
 
 	public void tokenMenu() {
 
-		String str = "J a v a P r o g r a m";
+		String str = "J a v a P r o g r a m ";
 
 		// 토큰 처리 전 글자, 토큰 처리 전 개수를 출력
 		int strCount = str.length();

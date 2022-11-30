@@ -23,21 +23,21 @@ public class D_StringBufferAndBuilder {
 		StringBuilder sb2 = new StringBuilder("hello");
 		sb2.append("World");
 		
-		System.out.println(sb.toString());
+		System.out.println(sb.toString()); // helloWorld,
 		
-		System.out.println(sb2);
+		System.out.println(sb2); // helloWorld
 		
-		System.out.println("sb의 길이는 ? "+sb.length());
+		System.out.println("sb의 길이는 ? "+sb.length()); // sb의 길이는 ? 11
 		
 		//String fileName = "TEST.txt"
-		System.out.println("o의 마지막 위치느 ? "+sb.lastIndexOf("."));
+		System.out.println("o의 마지막 위치느 ? "+sb.lastIndexOf(".")); // o의 마지막 위치느 ? -1
 		
 		// 마지막위치의 문자를 없애는 메서드
 		// 마지막위치 -> 문자열의 길이 -1
 		// sb.deleteCharAt(인덱스);
 		sb.deleteCharAt(sb.length() - 1);
 		
-		System.out.println(sb);
+		System.out.println(sb); // helloWorld
 		
 		// 내가원하는 위치의 인덱스부터 내가 정한 마지막 인덱스까지 삭제  
 		// 시작인덱스 <= 인덱스범위 <= 종료인덱스

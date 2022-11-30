@@ -12,21 +12,21 @@ public class A_StringPoolTest {
 		String str2 = new String("hello");
 		
 		System.out.println(str1 == str2); // false => 주소값 비교
-		System.out.println(str1);
-		System.out.println(str2.toString());
+		System.out.println(str1); // hello
+		System.out.println(str2.toString()); // hello
 		// String 클래스의 toString()메소드의 경우 실제 담겨있는 문자열을 반환하도록 오버라이딩 되어있음.
 		
 		System.out.println(str1.equals(str2)); // true => 문자열 비교
 		// String클래스의 equals() 메소드의 경우 주소값 비교가 아닌 문자열 비교를 하도록 오버라이딩 되어있음.
 		
-		System.out.println(str1.hashCode());
-		System.out.println(str2.hashCode());
+		System.out.println(str1.hashCode()); // 99162322
+		System.out.println(str2.hashCode()); // 99162322
 		// String클래스의 hashCode()메소드의 경우 주소값 기반이 아닌 실제 담긴 문자열 기반으로 해시코드값을
 		// 반환하도록 오버라이딩 되어있음
 		
 		// 정말 주소값을 알고싶을때 사용하는 메서드 System.identityHashCode(참조변수(레퍼런스변수));
-		System.out.println(System.identityHashCode(str1));
-		System.out.println(System.identityHashCode(str2));
+		System.out.println(System.identityHashCode(str1)); // 1982791261
+		System.out.println(System.identityHashCode(str2)); // 1562557367
 	}
 	
 	// 2. 문자열을 리터럴(값)로 생성
@@ -35,32 +35,32 @@ public class A_StringPoolTest {
 		String str = new String("hello");
 		
 		// 리터럴값이 상수풀에 올라감.
-		String str1 = "hello";
+		String str1 = "hello"; 
 		String str2 = "hello";
 		
 		// StringPool : 동일한 문자열 존재 불가
 		System.out.println(str1 == str2); // true(주소값이 일치한다)
 		
-		System.out.println(str1);
-		System.out.println(str2);
+		System.out.println(str1); // hello
+		System.out.println(str2); // hello
 		
-		System.out.println(str1.hashCode());
-		System.out.println(str2.hashCode());
+		System.out.println(str1.hashCode()); // 99162322
+		System.out.println(str2.hashCode()); // 99162322
 		
-		System.out.println(System.identityHashCode(str1));
-		System.out.println(System.identityHashCode(str2));
+		System.out.println(System.identityHashCode(str1)); // 1101288798
+		System.out.println(System.identityHashCode(str2)); // 1101288798
 	}
 	
 	// 불변클래스
 	public void method3() {
 		String str = "hello";
-		System.out.println(System.identityHashCode(str));
+		System.out.println(System.identityHashCode(str)); // 1101288798
 		
 		str = "goodbye";
-		System.out.println(System.identityHashCode(str));
+		System.out.println(System.identityHashCode(str)); // 942731712
 		
 		str += "abc"; // str = atr + "abc";
-		System.out.println(System.identityHashCode(str));
+		System.out.println(System.identityHashCode(str)); // 971848845
 		
 		/*
 		 * 기존의 상수풀의 연결이 끊긴 문자열들은 가비지 콜렉터가 알아서 정리해줌

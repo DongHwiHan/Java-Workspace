@@ -10,37 +10,37 @@ public class MathRun {
 		// Math 클래스 (수학과 관련된기능을 제공하고 있음.)
 		
 		// 파이 => Math클래스 내에 상수필드로 정의 되어 있음.
-		System.out.println("파이 : "+Math.PI);
+		System.out.println("파이 : "+Math.PI); // 파이 : 3.141592653589793
 		
 		// 메소드명(매개변수) : 반환형
 		// 올림 => Math.ceil(double) : 반환값 double형
 		double num1 = 4.349;
-		System.out.println("올림 : "+Math.ceil(num1));
+		System.out.println("올림 : "+Math.ceil(num1)); // 올림 : 5.0
 		
 		// 반올림 => Math.round(double) : 반환값이 long형
-		System.out.println("반올림 : "+Math.round(num1));
+		System.out.println("반올림 : "+Math.round(num1)); // 반올림 : 4
 		
 		// 버림  => Math.floor(double)  : 반환값이 double형
-		System.out.println("버림 : "+Math.floor(num1));
+		System.out.println("버림 : "+Math.floor(num1)); // 버림 : 4.0
 		
 		// 가장 가까운 정수값을 알아낸 후 실수형 반환 : rint
-		System.out.println("가장 가까운 정수값 : "+ Math.rint(num1) );
+		System.out.println("가장 가까운 정수값 : "+ Math.rint(num1) ); // 가장 가까운 정수값 : 4.0
 		
 		// 절대값 => Math.abs(int/double/long/float) : 반환값 : 매개변수 그대로
 		int num2 = -10;
-		System.out.println("절대값 : "+Math.abs(num2));
+		System.out.println("절대값 : "+Math.abs(num2)); // 절대값 : 10
 		
 		// 최소값 => Math.min(int ,int) : 반환값 int
-		System.out.println("최소값 : "+(Math.max(1, 6))+(Math.min(-1.5, -1.49)));
+		System.out.println("최소값 : "+(Math.max(1, 6))+(Math.min(-1.5, -1.49))); // 최소값 : 6-1.5
 		
 		// 최대값 => Math.max(int, int) : 반환값 int
-		System.out.println("최대값 : "+Math.max(5, 10));
+		System.out.println("최대값 : "+Math.max(5, 10)); // 최대값 : 10
 		
 		// 제곱근(루트) => Math.sqrt(double) : 반환값 double
-		System.out.println("9의 제곱근 : "+Math.sqrt(8));
+		System.out.println("9의 제곱근 : "+Math.sqrt(8)); // 9의 제곱근 : 2.8284271247461903
 		
 		// 제곱 => Math.pow(double, double) : 반환값 double
-		System.out.println("2의 10제곱 : "+Math.pow(2, 10));
+		System.out.println("2의 10제곱 : "+Math.pow(2, 10)); // 2의 10제곱 : 1024.0
 		
 		/*
 		 * java.lang.Math 클래스의 특징
