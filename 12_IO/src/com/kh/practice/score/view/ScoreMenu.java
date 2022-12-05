@@ -19,7 +19,6 @@ public class ScoreMenu {
 			case 1:
 				saveScore();
 				break;
-
 			case 2:
 				readScore();
 				break;
