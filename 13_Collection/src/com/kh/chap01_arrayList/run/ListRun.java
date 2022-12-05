@@ -129,25 +129,32 @@ public class ListRun {
 //			Music [title=ㅇㄴㅁ, artist=ㅁㄴㅇㅈ]
 //			Music [title=뉴진스 좋아하는, artist=강사님]
 //			Music [title=후드출신, artist=경민선생님]
-		
+
 		System.out.println("=============================================");
-		
+
 //		7. subList(int index1, int index2) : 해당 리스트로부터 index1에서 index2까지의 데이터 값들을
 //												추출해서 새로운 List로 변환시켜주는 메소드
-		
-		List<Music> sub = list.subList(0, 2); // 0 <= 인덱스 범위  < 2
+
+		List<Music> sub = list.subList(0, 2); // 0 <= 인덱스 범위 < 2
 		System.out.println(sub); // [Music [title=ㅇㄴㅁ, artist=ㅁㄴㅇㅈ], Music [title=뉴진스 좋아하는, artist=강사님]]
-		
+
 		System.out.println("=============================================");
-		
+
 //		8. addAll(Collection c) : 해당 리스트에 다른 컬렉션에 있는 데이터들을 통채로 추가해주는 메소드
 		list.addAll(sub);
-		System.out.println(list); // [Music [title=ㅇㄴㅁ, artist=ㅁㄴㅇㅈ], Music [title=뉴진스 좋아하는, artist=강사님], Music [title=후드출신, artist=경민선생님], Music [title=ㅇㄴㅁ, artist=ㅁㄴㅇㅈ], Music [title=뉴진스 좋아하는, artist=강사님]]
-		
+		System.out.println(list); // [Music [title=ㅇㄴㅁ, artist=ㅁㄴㅇㅈ], Music [title=뉴진스 좋아하는, artist=강사님], Music
+									// [title=후드출신, artist=경민선생님], Music [title=ㅇㄴㅁ, artist=ㅁㄴㅇㅈ], Music [title=뉴진스
+									// 좋아하는, artist=강사님]]
+
 		System.out.println("=============================================");
-		
+
 //		9. isEmpty() : 해당리스트가 비어있는지 묻는 메소드(비어있으면 true / 비어있지 않자면 false 반환)
-		System.out.println("리스트가 비어있습니까? " + list.isEmpty() );
+		System.out.println("리스트가 비어있습니까? " + list.isEmpty()); // 리스트가 비어있습니까? false
+
+//		10. clear() : 해당 리스트를 비워주는 메소드
+		list.clear();
+		System.out.println(list); // []
+		System.out.println("리스트가 비어있습니까? " + list.isEmpty()); // 리스트가 비어있습니까? true
 	}
 
 }
