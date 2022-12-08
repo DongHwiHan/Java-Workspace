@@ -128,7 +128,7 @@ public class MemberMenu {
 			if (mc.login(id, password) == null) {
 				System.out.println("이름변경에 실패했습니다. 다시 입력해주세요");
 			} else {
-				System.out.printf("현재 설정된 이름 : %s\n", mc.login(id, password));
+				System.out.printf("현재 설정된 이름 : %s\n" + mc.login(id, password));
 				System.out.print("변경할 이름 : ");
 				String newName = sc.nextLine();
 				mc.changeName(id, newName);
